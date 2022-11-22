@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORM</title>
+    <link rel="icon" href="css.jpg" />
+    <style>
+      body {
+        background-image: url(menu1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .main {
+        background-image: radial-gradient(
+          circle,
+          rgb(141, 141, 201),
+          rgb(145, 199, 145),
+          rgb(121, 183, 212)
+        );
+        width: 30%;
+        height: auto;
+        margin-top: 30px;
+        margin-left: 850px;
+        margin-bottom: 40px;
+        background-color: rgb(123, 195, 207);
+        padding: 10px;
+      }
+      form {
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 20px;
+        height: auto;
+      }
+      h1 {
+        text-align: center;
+      }
+      div {
+        margin: 5px;
+        height: 20px;
+      }
+      input[type="text"] {
+        width: 300px;
+        height: 20px;
+        border-radius: 5px;
+        box-shadow: 5px 5px 5px grey;
+      }
+      input[type="tel"] {
+        width: 300px;
+        height: 20px;
+        border-radius: 5px;
+        box-shadow: 5px 5px 5px grey;
+      }
+      input[type="email"] {
+        width: 300px;
+        height: 20px;
+        border-radius: 5px;
+        box-shadow: 5px 5px 5px grey;
+      }
+      textarea {
+        width: 300px;
+        border-radius: 5px;
+        box-shadow: 5px 5px 5px grey;
+      }
+      fieldset {
+        background-color: white;
+        background-clip: padding-box;
+        margin-top: 10px;
+        width: 280px;
+        border-radius: 5px;
+        box-shadow: 5px 5px 5px grey;
+      }
+      .btn {
+        background-color: white;
+        margin-top: 20px;
+        width: 305px;
+        border: 1px solid black;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px grey;
+      }
+      .btn:hover {
+        background-color: rgb(146, 236, 161);
+        color: blue;
+        border: 1px solid black;
+        box-shadow: 5px 5px 5px black;
+      }
+      select {
+        width: 305px;
+        border-radius: 5px;
+        box-shadow: 5px 5px 5px grey;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <h1>Registeration</h1>
+      <form action="#" method="post">
+        <div>First Name</div>
+        <input
+          type="text"
+          name=""
+          id=""
+          placeholder="Enter First Name"
+          required
+        />
+
+        <div>Last Name</div>
+        <input
+          type="text"
+          name=""
+          id=""
+          placeholder="Enter Last Name"
+          required
+        />
+
+        <div>Mobile Number</div>
+        <input
+          type="tel"
+          name=""
+          id=""
+          required
+          placeholder="Enter 10 Digit Number"
+        />
+
+        <fieldset>
+          <legend>Gender</legend>
+          <input type="radio" name="gender" id="male" />
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="female" />
+          <label for="female">Female</label>
+          <input type="radio" name="gender" name="" id="other" />
+          <label for="other">Other</label>
+        </fieldset>
+
+        <div>Email</div>
+        <input
+          type="email"
+          name=""
+          id=""
+          placeholder="Enter Mail id"
+          required
+        />
+        <div>Address</div>
+        <textarea name="" id="" cols="30" rows="5"></textarea>
+
+        <div>City</div>
+        <select name="" id="">
+          <option value="">Surat</option>
+          <option value="">Ahmedabad</option>
+          <option value="">Valsad</option>
+          <option value="">Vapi</option>
+        </select>
+        <br />
+        <input type="button" class="btn" value="Register" />
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Z_INDEX</title>
+    <link rel="icon" href="css.jpg" />
+    <style>
+      div .img {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        z-index: -1;
+        width: 400px;
+        height: 400px;
+      }
+      .i {
+        width: 350px;
+        height: 350px;
+        border: 2px solid red;
+        position: relative;
+      }
+      .a {
+        width: 80px;
+        height: 80px;
+        border: 1px solid black;
+        left: 5px;
+        margin: 5px;
+        position: absolute;
+        background-color: aquamarine;
+      }
+      .b {
+        width: 80px;
+        height: 80px;
+        border: 1px solid black;
+        left: 40px;
+        top: 40px;
+        margin: 5px;
+        background-color: greenyellow;
+        position: absolute;
+        z-index: 1;
+      }
+      .c {
+        width: 80px;
+        height: 80px;
+        border: 1px solid black;
+        left: 80px;
+        top: 80px;
+        margin: 5px;
+        background-color: yellow;
+        position: absolute;
+      }
+      .d {
+        width: 350px;
+        height: 350px;
+        margin: 5px;
+        position: absolute;
+        top: 180px;
+        line-height: 20px;
+        word-spacing: 2px;
+        letter-spacing: 1px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <b style="color: blue; font-size: 20px; text-decoration: underline"
+        >Z-INDEX :-</b
+      >
+      <hr />
+      <img class="img" src="logo.jpg" />
+      <p style="color: green; font-size: 20px">
+        1.Because the image has a z-index of -1, it will be placed behind the
+        text.<br />2.If the image has a z-index of 1, it will be placed front
+        the text.
+      </p>
+      <hr />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo hic quasi
+        inventore nulla possimus mollitia dolores ut. Nulla similique dicta
+        quibusdam nisi voluptate? Quas, quasi sint consequuntur id soluta
+        quidem? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Blanditiis eligendi unde itaque iste magni natus accusantium vero in
+        quasi porro harum voluptas, quisquam aliquid quibusdam, delectus ex!
+        Modi, placeat ea! Doloribus deserunt ut veritatis excepturi est impedit
+        minima facilis asperiores accusamus sunt, sit praesentium pariatur. Non
+        iusto cupiditate ex nesciunt modi exercitationem, aperiam voluptas quos.
+        Necessitatibus dolorem nostrum repudiandae numquam! Magnam, illo. Vero
+        sit minus autem qui? Eum maxime cupiditate, temporibus delectus libero
+        est accusamus distinctio expedita, voluptas ut magnam voluptatum! Quos
+        odio modi, vel a necessitatibus impedit id atque! Expedita
+        exercitationem ipsum tenetur rerum sequi voluptatum praesentium
+        obcaecati dicta cumque, recusandae nobis? Atque sed esse numquam fuga
+        sint eius aperiam accusamus nam, aspernatur, corporis pariatur libero?
+        Eius, hic nulla. Ad voluptate quas recusandae, quod excepturi ab
+        eligendi quos libero possimus, rerum laborum facere corrupti architecto
+        labore placeat praesentium ratione soluta. Ipsum tenetur aliquam error
+        facere earum expedita, hic tempora. Similique obcaecati sed, expedita
+        quas error vitae adipisci nesciunt fugit. Molestiae sit officia pariatur
+        animi aliquam cumque minus illo aut! Saepe voluptate facere harum ullam
+        illo totam temporibus! Nisi, sequi?
+      </p>
+      <hr />
+    </div>
+    <div class="i">
+      <div class="a">1</div>
+      <div class="b">2</div>
+      <div class="c">3</div>
+      <div class="d">
+        <b style="color: blue; text-decoration: underline">
+          z-index - priority base number </b
+        ><br />
+        1.priority number is highest its position is upper level. (Ex-2nd block)
+        <br />
+        2.priority number is highest its position is bottom/back level. (Ex-3nd
+        block)
+      </div>
+    </div>
+  </body>
+</html>

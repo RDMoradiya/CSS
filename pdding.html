@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PADDING</title>
+    <link rel="icon" href="css.jpg" />
+    <style>
+      div {
+        border: 3px dotted black;
+        background-color: rgb(116, 238, 122);
+        padding-top: 50px;
+        padding-right: 30px;
+        padding-bottom: 50px;
+        padding-left: 80px;
+        font-size: 20px;
+      }
+      .div1 {
+        border: 1px solid black;
+        padding: 25px 50px 75px 100px;
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- CSS Padding
+        The CSS padding properties are used to generate space around an element's content, inside of any defined borders.
+
+        With CSS, you have full control over the padding. There are properties for setting the padding for each side of an element (top, right, bottom, and left). -->
+
+    <!-- Padding - Individual Sides
+        CSS has properties for specifying the padding for each side of an element:
+        padding-top
+        padding-right
+        padding-bottom
+        padding-left 
+    
+        All the padding properties can have the following values:
+        length - specifies a padding in px, pt, cm, etc.
+        % - specifies a padding in % of the width of the containing element
+        inherit - specifies that the padding should be inherited from the parent element-->
+
+    <h2>Using individual padding properties</h2>
+
+    <div>
+      This div element has a top padding of 50px, a right padding of 30px, a
+      bottom padding of 50px, and a left padding of 80px.
+    </div>
+
+    <!-- Padding - Shorthand Property 
+
+     If the padding property has four values
+        padding: 25px 50px 75px 100px;
+        top padding is 25px
+        right padding is 50px
+        bottom padding is 75px
+        left padding is 100px 
+
+     If the padding property has three values:
+        padding: 25px 50px 75px;
+        top padding is 25px
+        right and left paddings are 50px
+        bottom padding is 75px 
+
+    If the padding property has two values:
+        padding: 25px 50px;
+        top and bottom paddings are 25px
+        right and left paddings are 50px 
+
+    If the padding property has one value:
+        padding: 25px;
+        all four paddings are 25px -->
+
+    <h2>The padding shorthand property - 4 values</h2>
+
+    <div class="div1">
+      This div element has a top padding of 25px, a right padding of 50px, a
+      bottom padding of 75px, and a left padding of 100px.
+    </div>
+  </body>
+</html>

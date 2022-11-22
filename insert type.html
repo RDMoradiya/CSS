@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BASIC CSS</title>
+    <link rel="stylesheet" href="#external css.css" />
+    <link rel="icon" href="css.jpg" />
+
+    <style>
+      .h {
+        color: blue;
+        margin-left: 40px;
+      }
+
+      #para {
+        color: green;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- CSS stands for Cascading Style Sheets
+    CSS describes how HTML elements are to be displayed on screen, paper, or in other media
+    CSS saves a lot of work. It can control the layout of multiple web pages all at once
+    External stylesheets are stored in CSS files -->
+
+    <!-- css syntax :--
+    selector {property : value} -->
+
+    <!-- There are three ways of inserting a style sheet:
+    1.External CSS
+    2.Internal CSS
+    3.Inline CSS -->
+
+    <!-- 1.External CSS
+    With an external style sheet, you can change the look of an entire website by changing just one file!
+    Each HTML page must include a reference to the external style sheet file inside the #<link> element, inside the head section. -->
+    <fieldset>
+      <legend style="font-size: 20px; color: blue">External CSS</legend>
+      <h1>This is a heading</h1>
+      <p>This is a paragraph.</p>
+    </fieldset>
+
+    <!-- 2.Internal CSS
+    An internal style sheet may be used if one single HTML page has a unique style.
+    The internal style is defined inside the #<style> element, inside the #head section. -->
+
+    <fieldset>
+      <legend style="font-size: 20px; color: green">Internal CSS</legend>
+      <h1 class="h">This is a heading</h1>
+      <p id="para">This is a paragraph.</p>
+    </fieldset>
+
+    <!-- 3.Inline CSS
+    An inline style may be used to apply a unique style for a single element.
+    To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property. -->
+
+    <fieldset>
+      <legend style="font-size: 20px; color: red">Inline CSS</legend>
+      <h1 style="color: blue; text-align: center">This is a heading</h1>
+      <p style="color: green; font-size: 35px">This is a paragraph.</p>
+    </fieldset>
+  </body>
+</html>

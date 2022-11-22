@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TRANSFORM 3D</title>
+    <link rel="icon" href="css.jpg" />
+    <style>
+      div {
+        margin-top: 200px;
+        margin-left: 300px;
+        width: auto;
+        height: 220px;
+        border: 1px solid black;
+        float: left;
+      }
+      #transalt3d {
+        height: 200px;
+        width: 200px;
+        margin-top: 8px;
+        margin-left: 10px;
+        background-color: rgb(165, 165, 224);
+        border: 2px solid black;
+        color: blue;
+        transition: 2s all ease;
+      }
+      #transalt3d:hover {
+        transform: translate3d(30px, 30px, 30px);
+      }
+      #scal3D {
+        height: 200px;
+        width: 200px;
+        margin-top: 8px;
+        margin-left: 10px;
+        background-color: rgb(197, 165, 224);
+        border: 2px solid black;
+        color: blue;
+        transition: 2s all ease;
+      }
+      #scal3D:hover {
+        transform: scale3d(1.5, 1.5, 1.5);
+      }
+      #rotate3D {
+        height: 200px;
+        width: 200px;
+        margin-top: 8px;
+        margin-left: 10px;
+        background-color: rgb(165, 224, 180);
+        border: 2px solid black;
+        color: blue;
+        transition: 3s all ease;
+        float: right;
+        margin-right: 10px;
+      }
+      #rotate3D:hover {
+        transform: rotate3D(90, 90, 90, 180deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div id="transalt3d">
+        Translate3D
+        <p>give values in pixels</p>
+        <p>transform: translate3d(X, Y, Z)</p>
+        <p>transform: translate3d(50px, 50px, 100px)</p>
+      </div>
+      <div id="scal3D">
+        Scal3D
+        <p>give values in numbers</p>
+        <p>transform: scal3D(X, Y, Z)</p>
+        <p>transform: scal3D(1.5, 1.5, 1.5)</p>
+      </div>
+      <div id="rotate3D">
+        rotate3D
+        <p>give values in numbers and degree</p>
+        <p>transform: rotate3D(X, Y, Z, degree)</p>
+        <p>transform: rotate3D(90, 90, 90, 360deg)</p>
+      </div>
+    </div>
+  </body>
+</html>

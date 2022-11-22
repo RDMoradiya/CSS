@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TRANSFORM 2D</title>
+    <link rel="ICON" href="css.jpg" />
+    <style>
+      .tr1 {
+        width: 300px;
+        height: 100px;
+        background-color: rgb(192, 192, 162);
+        border: 1px solid black;
+        transition: 3s;
+      }
+      .tr1:hover {
+        transform: translate(50px, 100px);
+      }
+      .tr2 {
+        width: 300px;
+        height: 100px;
+        background-color: rgb(219, 174, 137);
+        border: 1px solid black;
+        transition: 2s;
+        transition-timing-function: ease-in;
+      }
+      .tr2:hover {
+        transform: rotate(180deg);
+        /* transform: rotateX(45deg); */
+        /* transform: rotateY(90deg); */
+        /* transform: rotateZ(1355deg); */
+      }
+      .tr3 {
+        width: 200px;
+        height: 80px;
+        margin-left: 100px;
+        background-color: rgb(163, 163, 69);
+        border: 1px solid black;
+        transition: 3s;
+      }
+      .tr3:hover {
+        transform: scale(1.5, 1.5);
+        /* transform: scaleX(2); */
+        /* transform: scaleY(2); */
+      }
+      .tr4 {
+        width: 300px;
+        height: 100px;
+        margin-left: 20px;
+        background-color: rgb(186, 168, 228);
+        border: 1px solid black;
+        transition: 2s;
+      }
+      .tr4:hover {
+        transform: skew(-10deg, -10deg);
+        /* transform: skewY(20deg); */
+        /* transform: skewX(20deg); */
+      }
+      .tr5 {
+        width: 300px;
+        height: 100px;
+        background-color: rgb(231, 99, 214);
+        border: 1px solid black;
+        transition: 2s;
+      }
+      .tr5:hover{
+        /* transform:matrix(scaleX, skewX, skewY, scaleY, translateX, translateY) */
+        transform: matrix(1, -0.3, 0, 1, 0, 0);
+      }
+      .tr6 {
+        width: 300px;
+        height: 100px;
+        background-color: rgb(223, 221, 115);
+        border: 1px solid black;
+        margin-top: 60px;
+        transition: 2s;
+      }
+      .tr6:hover{
+        transform: matrix(1, 0, 0.5, 1, 150, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- With the CSS transform property you can use the following 2D transformation methods:
+
+        1.translate(
+        2.rotate()
+        3.scale()
+        4.skew()
+        5.matrix() -->
+
+    <!-- 1.The translate() Method
+        The translate() method moves an element from its current position (according to the parameters given for the X-axis and the Y-axis) -->
+    <!--x axis left to right shift - y axis top to bottom shift value -->
+
+    <fieldset>
+      <legend style="font-size: 30px; color: green">
+        1.The Translate() Method
+      </legend>
+      <p>The translate() method moves an element from its current position:</p>
+      <p style="color: red">
+        x axis left to right shift - y axis top to bottom shift value
+      </p>
+      <div class="tr1">
+        This div element is moved 50 pixels to the right, and 100 pixels down
+        from its current position.
+      </div>
+    </fieldset>
+    <br />
+
+    <!-- 2.The rotate() Method
+        The rotate() method rotates an element clockwise or counter-clockwise according to a given degree. 
+        set degree in 0 to 360 
+        transform: rotate(360deg); 
+        transform: rotateX(180deg); 
+        transform: rotateY(180deg); -->
+
+    <fieldset>
+      <legend style="font-size: 30px; color: blue">
+        2.The Rotate() Method
+      </legend>
+      <p>
+        The rotate() method rotates an element clockwise or counter-clockwise.
+      </p>
+      <p style="color: red">
+        Using negative values will rotate the element counter-clockwise.
+      </p>
+      <div class="tr2">This div element is rotated clockwise 20 degrees.</div>
+    </fieldset>
+    <br />
+
+    <!-- 3.The scale() Method
+        The scale() method increases or decreases the size of an element (according to the parameters given for the width and height). -->
+
+    <!-- scale - apply x and y value 
+        1.The scaleX() method increases or decreases the width of an element.
+        2.The scaleY() method increases or decreases the height of an element.-->
+
+    <fieldset>
+      <legend style="font-size: 30px; color: brown">3.The Scal() Method</legend>
+      <p>The scale() method increases or decreases the size of an element.</p>
+      <div class="tr3">
+        This div element is two times of its original width, and three times of
+        its original height.
+      </div>
+    </fieldset>
+    <br />
+
+    <!-- 4.The skew() Method
+        The skewX() method skews an element along the X-axis by the given angle. -->
+
+    <fieldset>
+      <legend style="font-size: 30px; color: brown">4.The Skew() Method</legend>
+      <p>
+        The skewX() method skews an element along the X-axis by the given angle.
+      </p>
+      <p style="color: red">
+        Using negative values will rotate the element counter-clockwise.
+      </p>
+      <div class="tr4">
+        This div element is skewed -10 degrees along the X-axis amd Y-axis.
+      </div>
+    </fieldset>
+    <br />
+
+    <!-- 5.The matrix() Method
+        The matrix() method take six parameters, containing mathematic functions, which allows you to rotate,   scale, move (translate), and skew elements. -->
+    <!-- scaleX, skewX, skewY, scaleY, translateX, translateY -->
+
+        <fieldset>
+            <legend style="font-size: 30px; color: blueviolet">5.The Matrix() Method</legend>
+            <p style="color: red;">transform:matrix(scaleX, skewX, skewY, scaleY, translateX, translateY);</p>
+            <div class="tr5">
+                Using the matrix() method.
+            </div>
+            <div class="tr6">
+                Another use of the matrix() method.
+            </div>
+  </body>
+</html>

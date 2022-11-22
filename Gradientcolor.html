@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GARDIENT COLOR</title>
+    <link rel="icon" href="css.jpg" />
+    <style>
+      #g1 {
+        /* Linear-gradient */
+        border: 3px dotted black;
+        margin: auto;
+        width: 500px;
+        height: 200px;
+        background-image: linear-gradient(orange, white, green);
+      }
+      #grad1 {
+        /* Liner-gradient Using Angles */
+        font-size: 40px;
+        border: 3px dotted black;
+        margin: auto;
+        width: 200px;
+        height: 200px;
+        background-image: linear-gradient(23deg, orange, white, green);
+      }
+
+      #grad2 {
+        /* Liner-gradient Using Angles */
+        font-size: 40px;
+        border: 3px dotted black;
+        margin: auto;
+        width: 200px;
+        height: 200px;
+        background-image: linear-gradient(106deg, orange, white, green);
+      }
+
+      #grad3 {
+        /* Liner-gradient Using Angles */
+        font-size: 40px;
+        border: 3px dotted black;
+        margin: auto;
+        width: 200px;
+        height: 200px;
+        background-image: linear-gradient(222deg, orange, white, green);
+      }
+
+      #grad4 {
+        /* Liner-gradient Using Angles */
+        font-size: 40px;
+        border: 3px dotted black;
+        margin: auto;
+        width: 200px;
+        height: 200px;
+        background-image: linear-gradient(-154deg, orange, white, green);
+      }
+      .gr2 {
+        /* Liner-gradient Using Percentage */
+        margin: auto;
+        width: 300px;
+        height: 200px;
+        border: 2px solid black;
+        box-shadow: -20px 20px 20px green;
+        background-image: linear-gradient(red 20%, blue 75%, yellow 60%);
+      }
+      #gra1 {
+        /* Repeating Liner-gradient */
+        margin: auto;
+        width: 600px;
+        height: 300px;
+        background-color: red;
+        background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+      }
+
+      #gra2 {
+        /* Repeating Liner-gradient */
+        margin: auto;
+        width: 600px;
+        height: 300px;
+        background-image: repeating-linear-gradient(
+          45deg,
+          red 5%,
+          yellow 7%,
+          green 10%
+        );
+      }
+
+      #gra3 {
+        /* Repeating Liner-gradient */
+        margin: auto;
+        width: 600px;
+        height: 300px;
+        background-image: repeating-linear-gradient(
+          190deg,
+          red,
+          yellow 10%,
+          green 15%
+        );
+      }
+
+      #gra4 {
+        /* Repeating Liner-gradient */
+        margin: auto;
+        width: 600px;
+        height: 300px;
+        background-image: repeating-linear-gradient(
+          90deg,
+          red,
+          yellow 1%,
+          green 5%
+        );
+      }
+
+      #gra5 {
+        /* Repeating Liner-gradient */
+        margin: auto;
+        width: 600px;
+        height: 300px;
+        background-image: repeating-linear-gradient(
+          45deg,
+          red 0px,
+          red 10px,
+          yellow 10px,
+          yellow 20px
+        );
+      }
+      #gd1 {
+        /* Radial-gradient */
+        margin: auto;
+        width: 400px;
+        height: 300px;
+        background-image: radial-gradient(red, yellow, green);
+      }
+      .gr5 {
+        /* Radial-gradient Using Percentage */
+        margin: auto;
+        height: 300px;
+        width: 400px;
+        background-image: radial-gradient(red 1%, yellow 40%, green 60%);
+      }
+      .gr6 {
+        /* Shap Radial-gradient */
+        margin: auto;
+        height: 300px;
+        width: 400px;
+        background-image: radial-gradient(circle, red, yellow, green);
+      }
+      #ga1 {
+        /* Repeating Radial-gradient */
+        margin: auto;
+        height: 300px;
+        width: 400px;
+        background-image: repeating-radial-gradient(
+          ellipse,
+          red 30%,
+          yellow 40%,
+          green 45%
+        );
+      }
+      #gg1 {
+        /* Conical-gradient */
+        margin: auto;
+        height: 300px;
+        width: 400px;
+        background-image: conic-gradient(red, yellow, green, blue);
+      }
+      #gdd1 {
+        /* Conical-gradient Using Degree */
+        margin: auto;
+        height: 300px;
+        width: 300px;
+        background-image: conic-gradient(
+          red 120deg,
+          yellow 180deg,
+          green 220deg
+        );
+        border-radius: 50%;
+      }
+      #gdd2 {
+        /* Conic Gradient - Pie Chart */
+        margin: auto;
+        height: 300px;
+        width: 300px;
+        background-image: conic-gradient(
+          red 0deg,
+          red 90deg,
+          yellow 90deg,
+          yellow 180deg,
+          green 180deg,
+          green 270deg,
+          blue 270deg
+        );
+        border-radius: 50%;
+      }
+      #gdd3 {
+        /* Conical-gradient Using Angles */
+        margin: auto;
+        height: 300px;
+        width: 300px;
+        background-image: conic-gradient(from 90deg, red, yellow, green);
+        border-radius: 50%;
+      }
+      #gdd4 {
+        /* Conic Gradient With Specified Center Position */
+        margin: auto;
+        height: 300px;
+        width: 300px;
+        background-image: conic-gradient(at 75% 50%, red, yellow, green);
+        border-radius: 50%;
+      }
+      #gaa1 {
+        /* Repeating Conical-gradient */
+        margin: auto;
+        height: 300px;
+        width: 300px;
+        background-image: repeating-conic-gradient(
+          red 5%,
+          blue 10%,
+          rgb(229, 229, 192) 15%
+        );
+        border-radius: 50%;
+      }
+      #gaa2 {
+        /* Repeating a Conic Gradient with color-starts and -stops */
+        margin: auto;
+        height: 300px;
+        width: 300px;
+        background-image: repeating-conic-gradient(
+          orange 0deg 10deg,
+          rgb(79, 142, 236) 10deg 20deg,
+          green 20deg 30deg
+        );
+        border-radius: 30%;
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- CSS gradients let you display smooth transitions between two or more specified colors.
+
+        CSS defines three types of gradients:
+        Linear Gradients (goes down/up/left/right/diagonally)
+        Radial Gradients (defined by their center)
+        Conic Gradients (rotated around a center point)-->
+
+    <!--1. Linear Gradients
+        To create a linear gradient you must define at least two color stops. Color stops are the colors you want to render smooth transitions among. You can also set a starting point and a direction (or an angle) along with the gradient effect.
+
+        Syntax
+        background-image: linear-gradient(direction, color-stop1, color-stop2, ...);
+        direction = to right, to left, to bottom, to top-->
+
+    <fieldset>
+      <legend style="font-size: 30px; text-align: left">
+        1.Linear-gradient
+      </legend>
+      <div id="g1">
+        <p style="padding: 20px; font-size: 20px; color: blue">
+          Syntax :-
+          <br /><br />
+          background-image: linear-gradient(direction, color-stop1, color-stop2,
+          ...); <br />
+          <br />
+          direction = to right, to left, to bottom, to top
+        </p>
+      </div>
+    </fieldset>
+    <br />
+
+    <!-- Using Angles
+        If you want more control over the direction of the gradient, you can define an angle, instead of the        predefined directions (to bottom, to top, to right, to left, to bottom right, etc.). A value of 0deg is     equivalent to "to top". A value of 90deg is equivalent to "to right". A value of 180deg is equivalent to     "to bottom".
+
+        Syntax
+        background-image: linear-gradient(angle, color-stop1, color-stop2); -->
+
+    <fieldset style="display: flex">
+      <legend style="font-size: 30px; text-align: left">
+        Liner-gradient Using Angles
+      </legend>
+
+      <div id="grad1" style="text-align: center">23deg</div>
+      <br />
+      <div id="grad2" style="text-align: center">106deg</div>
+      <br />
+      <div id="grad3" style="text-align: center">222deg</div>
+      <br />
+      <div id="grad4" style="text-align: center">-154deg</div>
+    </fieldset>
+    <br />
+
+    <fieldset>
+      <legend style="font-size: 30px; text-align: left">
+        Liner-gradient Using Percentage
+      </legend>
+      <div class="gr2"></div>
+      <br />
+    </fieldset>
+    <br />
+
+    <fieldset>
+      <legend style="font-size: 30px; text-align: left">
+        Repeating Liner-gradient
+      </legend>
+      <div id="gra1"></div>
+
+      <p>A repeating gradient on 45deg axe starting red and finishing green:</p>
+      <div id="gra2"></div>
+
+      <p>
+        A repeating gradient on 190deg axe starting red and finishing green:
+      </p>
+      <div id="gra3"></div>
+
+      <p>A repeating gradient on 90deg axe starting red and finishing green:</p>
+      <div id="gra4"></div>
+
+      <p>A repeating linear gradient with solid stripes:</p>
+      <div id="gra5"></div>
+    </fieldset>
+    <br />
+
+    <!--2. Radial Gradients
+        A radial gradient is defined by its center.
+
+        To create a radial gradient you must also define at least two color stops.
+
+        Syntax
+        background-image: radial-gradient(shape size at position, start-color, ..., last-color);
+        By default, shape is ellipse, size is farthest-corner, and position is center. -->
+
+    <fieldset>
+      <legend style="font-size: 30px; text-align: left">
+        2.Radial-gradient
+      </legend>
+      <div id="gd1"></div>
+    </fieldset>
+    <br />
+
+    <fieldset>
+      <legend style="font-size: 30px; text-align: left">
+        Radial-gradient Using Percentage
+      </legend>
+      <div class="gr5"></div>
+      <br />
+    </fieldset>
+    <br />
+
+    <!-- Shape in Radial-gradient :- 
+        The shape parameter defines the shape. It can take the value circle or ellipse. The default value is ellipse. -->
+
+    <fieldset>
+      <legend style="font-size: 30px; text-align: left">
+        Shap Radial-gradient
+      </legend>
+      <div class="gr6">
+        <p style="padding: 20px; font-size: 20px; color: blue">
+          The shape parameter defines the shape. <br /><br />
+          It can take the value circle or ellipse. <br /><br />
+          The default value is ellipse.
+        </p>
+      </div>
+      <br />
+    </fieldset>
+    <br />
+
+    <fieldset>
+      <legend style="font-size: 30px; text-align: left">
+        Repeating Radial-gradient
+      </legend>
+      <div id="ga1"></div>
+    </fieldset>
+    <br />
+
+    <!-- 3. Conic Gradients
+        A conic gradient is a gradient with color transitions rotated around a center point.
+
+        To create a conic gradient you must define at least two colors.
+
+        Syntax
+        background-image: conic-gradient([from angle] [at position,] color [degree], color [degree], ...);
+        By default, angle is 0deg and position is center.
+
+        If no degree is specified, the colors will be spread equally around the center point. -->
+
+    <fieldset>
+      <legend style="font-size: 30px; text-align: left">
+        Conical-gradient
+      </legend>
+      <div id="gg1"></div>
+    </fieldset>
+    <br />
+
+    <fieldset>
+      <legend style="font-size: 30px; text-align: left">
+        Conical-gradient Using Degree
+      </legend>
+      <div id="gdd1"></div>
+    </fieldset>
+    <br />
+
+    <fieldset>
+      <legend style="font-size: 30px; text-align: left">
+        Conic Gradient - Pie Chart
+      </legend>
+      <div id="gdd2"></div>
+    </fieldset>
+    <br />
+
+    <fieldset>
+      <legend style="font-size: 30px; text-align: left">
+        Conical-gradient Using Angles
+      </legend>
+      <p style="font-size: 20px; color: red">
+        The [from angle] specifies an angle that the entire conic gradient is
+        rotated by. The following example shows a conic gradient with a from
+        angle of 90deg:
+      </p>
+      <div id="gdd3"></div>
+    </fieldset>
+    <br />
+
+    <fieldset>
+      <legend style="font-size: 30px; text-align: left">
+        Conic Gradient With Specified Center Position
+      </legend>
+      <p style="font-size: 20px; color: red">
+        The [at position] specifies the center of the conic gradient. The
+        following example shows a conic gradient with a center position of 60%
+        45%:
+      </p>
+      <div id="gdd4"></div>
+    </fieldset>
+    <br />
+
+    <fieldset>
+      <legend style="font-size: 30px; text-align: left">
+        Repeating Conical-gradient
+      </legend>
+      <div id="gaa1"></div>
+    </fieldset>
+    <br />
+
+    <fieldset>
+      <legend style="font-size: 30px; text-align: left">
+        Repeating a Conic Gradient with color-starts and -stops
+      </legend>
+      <div id="gaa2"></div>
+    </fieldset>
+    <br />
+  </body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BORDER IMG</title>
+    <link rel="icon" href="css.jpg" />
+    <style>
+      /* short-form :- 
+         border-image: url() Where to slice the image (number/percentages) border-image-repeat; */
+
+      #borderimg {
+        border: 10px solid transparent;
+        padding: 25px;
+        width: 500px;
+        border-image: url(border5.png) 30 round;
+        /* Here, the middle sections of the image are repeated to create the border */
+      }
+      #borderimg1 {
+        border: 10px solid transparent;
+        padding: 15px;
+        width: 500px;
+        border-image: url(border2.png) 10% stretch;
+        /* Here, the middle sections of the image are stretched to create the border */
+      }
+      #borderimg11 {
+        border: 15px solid transparent;
+        padding: 15px;
+        border-image-source: url(border2.png);
+        /* border-image-repeat: repeat, round, space,stretch ; */
+        border-image-repeat: stretch;
+        border-image-slice: 30;
+      }
+
+      #borderimg22 {
+        border: 15px solid transparent;
+        padding: 15px;
+        border-image-source: url(border2.png);
+        border-image-repeat: repeat;
+        border-image-slice: 30;
+      }
+
+      #borderimg33 {
+        border: 15px solid transparent;
+        padding: 15px;
+        border-image-source: url(border2.png);
+        border-image-repeat: round;
+        border-image-slice: 30;
+      }
+
+      #borderimg44 {
+        border: 15px solid transparent;
+        padding: 15px;
+        border-image-source: url(border2.png);
+        border-image-repeat: space;
+        border-image-slice: 30;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- border-image Property
+        The CSS border-image property allows you to specify an image to be used instead of the normal border around an element.
+
+        The property has three parts:
+
+        1.The image to use as the border (url)
+        2.Where to slice the image (number/percentages)
+        3.Define whether the middle sections should be repeated or stretched (border-image-repeat)-->
+
+    <!-- The border-image property takes the image and slices it into nine sections, like a tic-tac-toe  board. It then places the corners at the corners, and the middle sections are repeated or stretched as you specify.
+
+    Note: For border-image to work, the element also needs the border property set! -->
+
+    <h1>The border-image with round Property</h1>
+
+    <p>
+      Here, the middle sections of the image are repeated to create the border:
+    </p>
+    <p id="borderimg">border-image: url(border.png) 40 round;</p>
+
+    <p>Here is the original image:</p>
+    <img src="border5.png" />
+    <br />
+    <hr />
+    <br />
+    <h1>The border-image with slice Property</h1>
+
+    <p>
+      Here, the middle sections of the image are stretched to create the border:
+    </p>
+    <p id="borderimg1">border-image: url(border.png) 30 stretch;</p>
+
+    <p>Here is the original image:</p>
+    <img src="border3.png" />
+    <br />
+    <hr />
+    <br />
+
+    <fieldset>
+      <legend>The border-image-repeat Property</legend>
+      <h1>The border-image-repeat Property</h1>
+      <p>
+        The border-image-repeat property specifies whether the border image
+        should be repeated, rounded, spaced or stretched:
+      </p>
+
+      <h2>border-image-repeat: stretch (default):</h2>
+      <p id="borderimg11">Here, the image is stretched to fill the area.</p>
+
+      <h2>border-image-repeat: repeat:</h2>
+      <p id="borderimg22">
+        Here, the image is tiled to fill the area. Tiles are divided if
+        necessary.
+      </p>
+
+      <h2>border-image-repeat: round:</h2>
+      <p id="borderimg33">
+        Here, the image is tiled to fill the area. The image is rescaled if
+        necessary, to avoid dividing tiles.
+      </p>
+
+      <h2>border-image-repeat: space:</h2>
+      <p id="borderimg44">
+        Here, the image is tiled to fill the area. Extra space is distributed
+        around the tiles if necessary.
+      </p>
+
+      <p>Here is the original image:</p>
+      <img src="border2.png" />
+    </fieldset>
+  </body>
+</html>

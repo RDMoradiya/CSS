@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TRANSITION</title>
+    <link rel="icon" href="css.jpg" />
+    <style>
+      .tr1 {
+        width: 100px;
+        height: 100px;
+        background: red;
+      }
+      .tr1:hover {
+        width: 300px;
+        height: 300px;
+        transition: width 5s, height 4s;
+        /* set delay and duration time in second and milisecond */
+        transition-delay: 3s;
+        transition-duration: 1s;
+      }
+      div {
+        width: 100px;
+        height: 100px;
+        background: red;
+        transition: width 2s;
+      }
+
+      #div1 {
+        transition-timing-function: linear;
+      }
+      #div2 {
+        transition-timing-function: ease;
+      }
+      #div3 {
+        transition-timing-function: ease-in;
+      }
+      #div4 {
+        transition-timing-function: ease-out;
+      }
+      #div5 {
+        transition-timing-function: ease-in-out;
+      }
+
+      div:hover {
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- CSS transitions allows you to change property values smoothly, over a given duration. 
+        In this chapter you will learn about the following properties:
+        1.transition
+        2.transition-delay = The transition-delay property specifies a delay (in seconds) for the transition effect.
+        3.transition-duration
+        4.transition-property
+        5.transition-timing-function = The transition-timing-function property specifies the speed curve of the transition effect.
+            The transition-timing-function property can have the following values:
+
+            1.ease - specifies a transition effect with a slow start, then fast, then end slowly (this is default)
+            2.linear - specifies a transition effect with the same speed from start to end
+            3.ease-in - specifies a transition effect with a slow start
+            4.ease-out - specifies a transition effect with a slow end
+            5.ease-in-out - specifies a transition effect with a slow start and end
+            6.cubic-bezier(n,n,n,n) - lets you define your own values in a cubic-bezier function-->
+
+    <fieldset>
+      <legend style="font-size: 30px">The transition Property</legend>
+      <p>Hover over the div element below, to see the transition effect:</p>
+      <div class="tr1"></div>
+    </fieldset>
+    <br />
+    <fieldset>
+      <legend>transition-timing-function</legend>
+      <div id="div1">linear</div>
+      <br />
+      <div id="div2">ease</div>
+      <br />
+      <div id="div3">ease-in</div>
+      <br />
+      <div id="div4">ease-out</div>
+      <br />
+      <div id="div5">ease-in-out</div>
+      <br />
+    </fieldset>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BACKGROUND CLIP</title>
+    <link rel="icon" href="css.jpg" />
+    <style>
+      #example1 {
+        width: 50%;
+        margin: auto;
+        border: 10px dotted rgb(5, 110, 19);
+        padding: 15px;
+        background: rgb(103, 238, 148);
+        /* The background extends behind the border */
+        background-clip: border-box;
+      }
+
+      #example2 {
+        width: 50%;
+        margin: auto;
+        border: 10px dotted rgb(114, 14, 92);
+        padding: 15px;
+        background: rgb(223, 123, 198);
+        /* 1.apply backgrond color with padding in content 
+        2.The background extends to the inside edge of the border
+        */
+        background-clip: padding-box;
+      }
+
+      #example3 {
+        width: 50%;
+        margin: auto;
+        border: 10px dotted rgb(175, 46, 13);
+        padding: 15px;
+        background: rgb(233, 143, 83);
+        /* 1.apply background color only in content
+        2.The background extends to the edge of the content box */
+        background-clip: content-box;
+      }
+    </style>
+  </head>
+  <body>
+    <fieldset>
+      <legend style="color: blue; font-size: 30px">
+        The background-clip Property
+      </legend>
+
+      <p style="color: red">
+        The background-clip property defines how far the background should
+        extend within an element.
+      </p>
+    </fieldset>
+    <br />
+
+    <fieldset>
+      <legend style="color: blue; font-size: 30px">
+        background-clip: border-box (this is default):
+      </legend>
+      <div id="example1">
+        <p style="color: red; text-align: center">
+          The background extends behind the border.
+        </p>
+      </div>
+    </fieldset>
+    <br />
+
+    <fieldset>
+      <legend style="color: blue; font-size: 30px">
+        background-clip: padding-box:
+      </legend>
+      <div id="example2">
+        <p style="color: red; text-align: center">
+          The background extends to the inside edge of the border.
+        </p>
+      </div>
+    </fieldset>
+    <br />
+
+    <fieldset>
+      <legend style="color: blue; font-size: 30px">
+        background-clip: content-box:
+      </legend>
+      <div id="example3">
+        <p style="color: red; text-align: center">
+          The background extends to the edge of the content box.
+        </p>
+      </div>
+    </fieldset>
+  </body>
+</html>

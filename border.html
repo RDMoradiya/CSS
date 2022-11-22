@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BORDER</title>
+    <link rel="icon" href="css.jpg" />
+    <link rel="stylesheet" href="border ex css.css" />
+  </head>
+  <body>
+    <!-- The border-style property specifies what kind of border to display.
+
+    The following values are allowed:
+
+    dotted - Defines a dotted border
+    dashed - Defines a dashed border
+    solid - Defines a solid border
+    double - Defines a double border
+    groove - Defines a 3D grooved border. The effect depends on the border-color value
+    ridge - Defines a 3D ridged border. The effect depends on the border-color value
+    inset - Defines a 3D inset border. The effect depends on the border-color value
+    outset - Defines a 3D outset border. The effect depends on the border-color value
+    none - Defines no border
+    hidden - Defines a hidden border -->
+
+    <fieldset style="border: 5px solid blue">
+      <legend style="font-size: 50px; color: green">Bordre style</legend>
+      <h2>The border-style Property</h2>
+      <p>This property specifies what kind of border to display:</p>
+
+      <p class="dotted">A dotted border.</p>
+      <p class="dashed">A dashed border.</p>
+      <p class="solid">A solid border.</p>
+      <p class="double">A double border.</p>
+      <p class="groove">A groove border.</p>
+      <p class="ridge">A ridge border.</p>
+      <p class="inset">An inset border.</p>
+      <p class="outset">An outset border.</p>
+      <p class="none">No border.</p>
+      <p class="hidden">A hidden border.</p>
+      <p class="mix">A mixed border.</p>
+    </fieldset>
+    <br />
+
+    <!-- The border-width property specifies the width of the four borders. -->
+    <!-- The border-width property can have from one to four values (for the top border, right border, bottom border, and the left border) -->
+
+    <fieldset style="border: 5px dotted red">
+      <legend style="font-size: 40px"><b> Border width</b></legend>
+      <p class="dashedw">A dashed border.</p>
+      <p class="mixw">A mixed border.</p>
+    </fieldset>
+    <br />
+
+    <!-- The border-color property is used to set the color of the four borders.
+    The color can be set by:
+
+    name - specify a color name, like "red"
+    HEX - specify a HEX value, like "#ff0000"
+    RGB - specify a RGB value, like "rgb(255,0,0)"
+    HSL - specify a HSL value, like "hsl(0, 100%, 50%)"
+    transparent -->
+
+    <fieldset style="border: 5px double darkcyan">
+      <legend style="font-size: 40px"><b> Border color</b></legend>
+      <p class="solidc">A solid border.</p>
+      <p class="insetc">An inset border.</p>
+    </fieldset>
+    <br />
+
+    <!-- From the examples on the previous pages, you have seen that it is possible to specify a different border for each side.
+    In CSS, there are also properties for specifying each of the borders (top, right, bottom, and left) -->
+
+    <fieldset style="border: 5px dashed green">
+      <legend style="font-size: 40px">Individual sides</legend>
+      <p class="solidca">A solid border.</p>
+    </fieldset>
+    <br />
+
+    <!-- #The border-radius property is used to add rounded borders to an element -->
+
+    <fieldset style="border: 5px solid red">
+      <legend style="font-size: 40px">Border Radius</legend>
+      <p class="solidr">A solid border.</p>
+      <p class="normal">Normal border</p>
+      <p class="round1">Round border</p>
+      <p class="round2">Rounder border</p>
+      <p class="round3">Roundest border</p>
+    </fieldset>
+  </body>
+</html>

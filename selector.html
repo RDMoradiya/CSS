@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SELECTORS</title>
+    <link rel="icon" href="css.jpg" />
+
+    <style>
+      * {
+        color: black;
+      }
+      p.as {
+        text-align: center;
+        color: blue;
+        font-size: 20px;
+        background-color: green;
+        width: 50%;
+      }
+
+      #para {
+        color: red;
+        background-color: aqua;
+        width: 80%;
+        text-align: right;
+      }
+
+      .pg {
+        color: deeppink;
+        background-color: black;
+        font-style: italic;
+      }
+
+      p.pg {
+        color: deeppink;
+        background-color: black;
+        font-style: italic;
+        text-align: right;
+      }
+
+      h1,
+      h2,
+      h2 {
+        color: indigo;
+        background-color: yellow;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- #CSS Selectors 
+    1.element Selector 
+        -you can see the head of html page shown #style tag this tag use for css in internal css   -->
+
+    <p>Every paragraph will be affected by the style.</p>
+
+    <!-- 2.id Selector 
+    To select an element with a specific id, write a hash (#) character, followed by the id of the element.-->
+
+    <p id="para">Every paragraph will be affected by the style.</p>
+
+    <!-- 3. class Selector
+    To select elements with a specific class, write a period (.) character, followed by the class name.-->
+
+    <p class="pg">Every paragraph will be affected by the style.</p>
+
+    <!-- You can also specify that only specific HTML elements should be affected by a class. -->
+
+    <p class="pg">Every paragraph will be affected by the style.</p>
+
+    <!-- 4.Universal Selector
+    The universal selector (*) selects all HTML elements on the page. -->
+
+    <p class="as">Every element on the page will be affected by the style.</p>
+    <p id="para">Me too!</p>
+    <p>And me!</p>
+    <p>hi kem cho</p>
+
+    <!-- 5.Grouping Selector 
+    The grouping selector selects all the HTML elements with the same style definitions.-->
+
+    <h1>Hello World!</h1>
+    <h2>Smaller heading!</h2>
+    <h3>This is a paragraph.</h3>
+  </body>
+</html>

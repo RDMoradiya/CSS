@@ -1,0 +1,483 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+a {
+  text-decoration: none;
+}
+
+/* Background Image  */
+
+header .bgimg {
+  background-image: url(1.jpg);
+  width: 100%;
+  height: 850px;
+  background-size: cover;
+  position: relative;
+}
+
+/* HEADER */
+/* navigation-bar */
+
+header .bgimg .nav {
+  width: 100%;
+  display: flex;
+  padding-top: 10px;
+}
+
+/* logo */
+
+header .nav .logo {
+  width: 35%;
+  color: #ff0000;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 30px;
+  padding-left: 50px;
+}
+header .nav .logo a i {
+  color: orangered;
+  padding-right: 10px;
+}
+header .nav .logo a {
+  color: white;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* menubar */
+
+header .nav .menubar {
+  width: 30%;
+  margin-top: 30px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  display: flex;
+}
+header .nav .menubar li {
+  list-style: none;
+  width: 85px;
+  text-align: center;
+  padding-top: 15px;
+}
+header .nav .menubar li a {
+  color: white;
+}
+header .nav .menubar .home a {
+  color: #ff0000;
+}
+header .nav .menubar .pages {
+  width: 120px;
+}
+header .nav .menubar .pages span {
+  padding-left: 5px;
+}
+header .nav .menubar li a:hover {
+  color: #ff0000;
+}
+header .nav .menubar li ul {
+  /* display: none; */
+}
+
+/* submenu */
+
+header .nav .menubar .pages .submenu a {
+  color: white;
+}
+header .nav .menubar .pages .submenu a:hover {
+  color: orangered;
+}
+header .nav .menubar .pages .submenu li {
+  width: 130px;
+  text-align: left;
+}
+/* header .nav .menubar li:hover .submenu {
+  display: block;
+} */
+
+/* search */
+
+header .nav .search {
+  width: 35%;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+header .nav .search a {
+  color: white;
+  font-size: 25px;
+  padding: 20px;
+  display: block;
+}
+header .nav .search .srch {
+  margin-left: 65px;
+}
+
+/* Image content */
+
+.content {
+  width: 100%;
+  position: absolute;
+  margin-top: 250px;
+  color: white;
+  text-align: center;
+}
+.content p {
+  font-size: 70px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+.content a {
+  color: white;
+  background-color: #ff0000;
+  border-radius: 10px;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  width: 150px;
+  font-weight: bold;
+  margin-top: 500px;
+  padding: 22px 35px;
+  line-height: 230px;
+}
+
+/* section-block1 */
+
+.block1 {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  padding-top: 80px;
+}
+
+/* content */
+
+.block1 .info {
+  width: 50%;
+}
+.block1 .info h1 {
+  font-size: 45px;
+  padding-top: 10px;
+  padding-left: 220px;
+  padding-bottom: 30px;
+  color: #2c3038;
+  font-family: "Poppins", sans-serif;
+}
+.block1 .info h3 {
+  padding-left: 218px;
+  padding-top: 20px;
+  font-size: 25px;
+  line-height: 40px;
+  color: #2c3038;
+  font-family: "Poppins", sans-serif;
+}
+.block1 .info p {
+  font-family: "Poppins", sans-serif;
+  color: #595d64;
+  padding-left: 215px;
+  line-height: 35px;
+  padding-top: 20px;
+  padding-right: 15px;
+  letter-spacing: 1px;
+}
+.block1 .info a {
+  color: white;
+  display: block;
+  background-color: #ff0000;
+  border-radius: 10px;
+  line-height: 35px;
+  font-size: 15px;
+  width: 107px;
+  font-weight: bold;
+  margin-left: 210px;
+  margin-top: 31px;
+  padding: 2px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+/* image */
+
+.block1 .image {
+  width: 50%;
+  padding-left: 80px;
+}
+.block1 .image img {
+  width: 655px;
+  height: 440px;
+  border-radius: 15px;
+}
+
+/* section-block2 */
+
+.block2 {
+  width: 100%;
+  height: 400px;
+  background-color: rgb(247, 240, 240);
+  margin-top: 160px;
+}
+.block2 .about {
+  display: flex;
+  text-align: center;
+  margin-left: 130px;
+  margin-right: 150px;
+}
+.block2 .about div {
+  width: 25%;
+  height: 300px;
+  margin-top: 50px;
+}
+.block2 .about .info .rec {
+  background-color: #ff0000;
+  width: 75px;
+  height: 75px;
+  margin-top: 40px;
+  margin-left: 165px;
+  border: none;
+  transition: 1s ease-in-out;
+}
+.block2 .about .info .rec span {
+  color: white;
+  font-size: 35px;
+  margin-top: 20px;
+  transition: 2s;
+}
+.block2 .about .info .rec:hover {
+  transform: rotate(180deg);
+}
+.block2 .about .info a {
+  display: block;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  color: #2c3038;
+  margin-top: 40px;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+.block2 .about .info a:hover {
+  color: #ff0000;
+}
+.block2 .about .info p {
+  font-family: "Poppins", sans-serif;
+  color: #2c3038;
+  margin-top: 20px;
+  padding-left: 40px;
+  padding-right: 20px;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+}
+
+/* section-block3 */
+/* form */
+
+.block3 {
+  width: 100%;
+  height: 500px;
+  margin-top: 25px;
+  display: flex;
+}
+.block3 .form {
+  display: grid;
+  grid-template-columns: repeat(1 1fr);
+  width: 50%;
+}
+
+.block3 .form h1 {
+  font-size: 60px;
+  color: #2c3038;
+  font-family: "Poppins", sans-serif;
+  padding-left: 215px;
+  font-weight: bold;
+  padding-top: 65px;
+}
+.block3 .form p {
+  font-size: 17px;
+  color: #2c3038;
+  font-family: "Poppins", sans-serif;
+  padding-left: 220px;
+  padding-right: 90px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.block3 .form input {
+  width: 350px;
+  background-color: white;
+  border: none;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-family: "Poppins", sans-serif;
+  margin-left: 215px;
+  height: 45px;
+  box-shadow: -1px -1px 10px grey;
+  border-radius: 5px;
+  padding: 10px;
+}
+.block3 .form div {
+  margin-bottom: 30px;
+}
+.block3 .form button {
+  width: 370px;
+  background-color: #ff0000;
+  border-radius: 10px;
+  border: none;
+  margin-left: 215px;
+  margin-top: 5px;
+  line-height: 50px;
+  font-size: 25px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+.block3 .form .time {
+  font-size: 20px;
+  padding-left: 215px;
+  padding-top: 10px;
+  font-weight: bold;
+}
+
+/* image */
+
+.block3 .image {
+  width: 50%;
+}
+.block3 .image img {
+  height: 520px;
+  width: 630px;
+  padding-top: 70px;
+  padding-left: 45px;
+}
+
+/* section-block4 */
+
+.block4 {
+  display: flex;
+  width: 100%;
+  height: 1350px;
+  background-color: rgb(247, 240, 240);
+  margin-top: 170px;
+}
+
+/* gallry */
+
+.block4 .gallry {
+  width: 50%;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-content: center;
+  margin-top: 40px;
+  padding-top: 40px;
+}
+.block4 .gallry .img1 img {
+  width: 200px;
+  height: 165px;
+  margin-top: 20px;
+  margin-left: 210px;
+  border-radius: 10px;
+}
+.block4 .gallry .img2 img {
+  width: 440px;
+  height: 305px;
+  margin-top: -55px;
+  border-radius: 10px;
+  margin-right: 15px;
+}
+.block4 .gallry .img3 img {
+  width: 200px;
+  height: 270px;
+  margin-top: -40px;
+  border-radius: 10px;
+  margin-left: 210px;
+}
+.block4 .gallry .img4 img {
+  width: 440px;
+  height: 400px;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+.block4 .gallry .img5 img {
+  width: 205px;
+  height: 270px;
+  margin-top: -160px;
+  margin-left: 210px;
+  border-radius: 10px;
+}
+.block4 .gallry .img6 img {
+  width: 440px;
+  height: 300px;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+.block4 .gallry .img7 img {
+  width: 205px;
+  height: 170px;
+  margin-top: -170px;
+  margin-left: 210px;
+  border-radius: 10px;
+}
+
+/* ourclub */
+
+.block4 .ourclub {
+  display: grid;
+  grid-template-columns: auto;
+  width: 50%;
+}
+
+.block4 .ourclub .clubinfo h1 {
+  font-size: 55px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  color: #2c3038;
+  padding-top: 140px;
+  padding-left: 40px;
+}
+.block4 .ourclub .clubinfo div {
+  width: 690px;
+}
+.block4 .ourclub .clubinfo p {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  color: #2c3038;
+  line-height: 40px;
+  padding-top: 40px;
+  padding-left: 40px;
+  letter-spacing: 1px;
+}
+
+/* gall */
+
+.block4 .ourclub .gall {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 700px;
+  margin-top: -100px;
+}
+.block4 .ourclub .gall img {
+  border-radius: 10px;
+}
+.block4 .ourclub .gall .img8 img {
+  width: 300px;
+  height: 400px;
+  margin-left: 40px;
+}
+.block4 .ourclub .gall .img9 img {
+  width: 320px;
+  height: 250px;
+  margin-left: 30px;
+  margin-bottom: 0px;
+}
+.block4 .ourclub .gall .img10 img {
+  width: 300px;
+  height: 280px;
+  margin-left: 40px;
+  margin-top: -20px;
+}
+.block4 .ourclub .gall .img11 img {
+  width: 320px;
+  height: 445px;
+  margin-top: -180px;
+  margin-left: 20px;
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DISPLAY</title>
+    <link rel="icon" href="css.jpg" />
+    <style>
+      .as {
+        border: 1px solid red;
+        display: block;
+        /* display content as block it not take in one line and it also consider height and width */
+        height: 70px;
+      }
+      .ad {
+        border: 1px solid red;
+        display: block;
+        width: 50%;
+        height: 50px;
+      }
+      .af {
+        border: 1px solid blue;
+        display: inline;
+        /* it display all content in one line but not consider height and width */
+      }
+      .ag {
+        border: 1px solid blue;
+        display: inline;
+      }
+      .hidden {
+        color: blue;
+        border: 2px solid black;
+        background-color: green;
+        display: none;
+      }
+      .p1p:hover .hidden {
+        background-color: red;
+        display: block;
+      }
+      .main {
+        height: 100px;
+        background-color: antiquewhite;
+        display: flex;
+      }
+      .sub1 {
+        height: 110px;
+        background-color: aquamarine;
+        width: 33%;
+        padding: 10px;
+      }
+      .sub2 {
+        height: 110px;
+        background-color: blueviolet;
+        width: 33%;
+        padding: 10px;
+      }
+      .sub3 {
+        height: 110px;
+        background-color: #45fd21;
+        width: 33%;
+        padding: 10px;
+      }
+      .grid {
+        background-color: rgb(224, 105, 185);
+        display: grid;
+        /* grid-template-columns: auto auto auto auto; 
+        1 fr = 1 fraction */
+        grid-template-columns: 1fr 1fr 1fr;
+        /* grid-template-rows: auto auto auto auto; */
+        grid-gap: 10px;
+        column-gap: 5px;
+        text-align: center;
+      }
+      p {
+        background-color: burlywood;
+        font-size: 20px;
+        height: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- The display property specifies if/how an element is displayed.
+
+    Every HTML element has a default display value depending on what type of element it is. The default display value for most elements is block or inline. -->
+
+    <!-- 1. Block-level Elements
+            A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can).
+            <div>
+            <h1> - <h6>
+            <p>
+            <form>
+            <header>
+            <footer>
+            <section>  -->
+
+    <!-- display content as block it not take in one line and it also consider height and width -->
+
+    <fieldset>
+      <legend>Display Block</legend>
+      <p class="as">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos incidunt
+        nam laborum. Deleniti, nisi provident exercitationem ipsam eveniet
+        reiciendis corrupti dignissimos ipsum. Dolor cumque nemo vel nobis
+        quidem minus est?
+      </p>
+      <p class="ad">block display</p>
+    </fieldset>
+    <br />
+
+    <!-- 2.Inline Elements
+            An inline element does not start on a new line and only takes up as much width as necessary.
+            <span>
+            <a>
+            <img>   -->
+
+    <!-- it display all content in one line but not consider height and width -->
+
+    <fieldset>
+      <legend>Display Inline</legend>
+      <p class="af">inline display</p>
+      <p class="ag">inline display</p>
+    </fieldset>
+    <br />
+
+    <!-- 3.Display: none;
+            display: none; is commonly used with JavaScript to hide and show elements without deleting and recreating them. Take a look at our last example on this page if you want to know how this can be achieved.
+            Hiding an element can be done by setting the display property to none. -->
+
+    <fieldset>
+      <legend>Display None</legend>
+      <div class="p1p">
+        This is a hidden heading
+        <p class="hidden">
+          Notice that the element with display: none; does not take up any
+          space.
+        </p>
+      </div>
+    </fieldset>
+    <br />
+
+    <!-- 4.Display Flex;
+        An flex element is like inline element but its contain hight and width  -->
+    <div class="main">
+      <div class="sub1">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt esse
+        exercitationem mollitia. Doloribus non ad ullam sed natus est! Deserunt
+        totam laborum architecto ipsam quidem dolor nostrum vitae quae? Numquam?
+      </div>
+      <div class="sub2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit voluptates
+        culpa impedit, quo assumenda explicabo ea iusto inventore ad quod fugit
+        tempora porro recusandae praesentium blanditiis libero veritatis modi
+        atque.
+      </div>
+      <div class="sub3">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
+        voluptate eveniet harum minima? Earum itaque eligendi porro,
+        consequatur, recusandae ex laborum sunt nisi consectetur, est iste
+        architecto quia eos culpa.
+      </div>
+    </div>
+    <br />
+    <br />
+    <fieldset style="border: 5px double red">
+      <legend style="font-size: 40px; color: blue">Display Grid</legend>
+      <div class="grid">
+        <p>Paragraph1</p>
+        <p>Paragraph2</p>
+        <p>Paragraph3</p>
+        <p>Paragraph4</p>
+        <p>Paragraph5</p>
+        <p>Paragraph6</p>
+        <p>Paragraph7</p>
+        <p>Paragraph8</p>
+        <p>Paragraph9</p>
+        <p>Paragraph10</p>
+        <p>Paragraph11</p>
+        <p>Paragraph12</p>
+      </div>
+    </fieldset>
+  </body>
+</html>

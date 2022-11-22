@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS BACKGROUND</title>
+    <link rel="icon" href="css.jpg" />
+
+    <style>
+      body {
+        /* The #background-color property specifies the background color of an element. */
+        /* With CSS, a color is most often specified by:
+        valid color name - like "red"
+        HEX value - like "#ff0000"
+        RGB value - like "rgb(255,0,0)" */
+
+        background-color: rgb(216, 173, 173);
+
+        /* The #opacity property specifies the opacity/transparency of an element. It can take a value from 0.0 - 1.0. */
+
+        opacity: 1;
+
+        /* The #background-image property specifies an image to use as the background of an element.
+        By default, the image is #repeated so it covers the entire element. */
+
+        background-image: url(background.jpg);
+
+        /* By default, the background-image property repeats an image both horizontally and vertically.
+        1.background-repeat: repeat-x
+        2.background-repeat: no-repeat */
+
+        background-repeat: no-repeat;
+
+        /* The background-position property is used to specify the position of the background image.
+        background-position: top,center,left,right */
+
+        background-position: top;
+
+        /* The #background-size property specifies the size of the background images.
+        background-size: cover,contain,auto */
+
+        /* 1.auto-Default value. The background image is displayed in its original size
+        2.length-Sets the width and height of the background image. The first value sets the width, the second value sets the height. If only one value is given, the second is set to "auto". Read about length units.
+        3.percentage-Sets the width and height of the background image in percent of the parent element. The first value sets the width, the second value sets the height. If only one value is given, the second is set to "auto"
+        4.cover-Resize the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges
+        5.contain-Resize the background image to make sure the image is fully visible */
+
+        background-size: cover;
+
+        /* 1.visible-Default value. The backside is visible
+           2.hidden-The backside is not visible
+           3.initial keyword is used to set a CSS property to its default value.
+           4.inherit keyword can be used for any CSS property, and on any HTML element. */
+
+        backface-visibility: visible;
+      }
+
+      /* The background-attachment property specifies whether the background image should scroll or be fixed */
+      /* background-attachment:
+        1.scroll-The background image will scroll with the page. This is default
+        2.fixed-The background image will not scroll with the page
+        3.local-The background image will scroll with the element's contents */
+
+      .body {
+        background-attachment: scroll;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p>This page has a light blue background color!</p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam alias
+      fugiat similique dolorem exercitationem reprehenderit maxime. Cupiditate
+      totam minima odio iste dolorum! Officia, eius ullam. Optio ab nostrum
+      recusandae odit.
+    </p>
+    <br />
+    <br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br />
+  </body>
+</html>
